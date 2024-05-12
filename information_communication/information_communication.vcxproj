@@ -151,6 +151,7 @@
     <ClCompile Include="StackResizable.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="WinnerTree.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayTree.h" />

@@ -1,5 +1,5 @@
 #pragma once
-#include "ArrayTree.h"
+#include "WinnerTree.h"
 #include <iostream>
 #include <cstdlib>
 
@@ -23,32 +23,26 @@
 //마찬가지로 quick select 도 할 수 있다. ---> select한 k값이 피벗보다 작다면 왼쪽영역 크다면 오른쪽 영역
 
 
+//Winner Tree 생성 Tree 구조를 적용!  1. 자료구조 tree 2. 
+
+
+
 
 
 
 int main()
 {
+	//list 의 순서 변경
+	int a[LIST][SIZE + 1] = { {24,12,4,INF},{22,15,3,INF} ,{19,14,6,INF }
+	,{21,9,1,INF },{23,11,8,INF },{17,10,5,INF },{16,13,2,INF },{20,18,7,INF } };
 
-	ArrayTree a;
-	a.InsertPos(1, "10");
-	a.InsertPos(2, "20");
-	a.InsertPos(3, "30");
-	a.InsertPos(4, "40");
-	a.InsertPos(5, "50");
-	a.InsertPos(7, "60");
-	a.InsertPos(8, "70");
-	a.PrintLevelOrder();
-
-	cout << a.Peekpos(5) << " ";
-	cout << a.DeletePos(7) << endl;
-	cout << a.NumNode() << " " << a.NumLeaf() << endl;
-	cout << a.Height();
-
-
-
+	MergeUsingWinnerTree w(a);
+	for (int i = 0; i < LIST * SIZE;i++) {
+		cout << w.DeleteWinner(a) << " ";
+	}
 
 	
-
+	 
 }
 
 

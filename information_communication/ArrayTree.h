@@ -4,9 +4,9 @@
 #include <string>
 using namespace std;
 
-typedef string Data;
+typedef int Data;  //변경내용
 
-const string NONE = "";
+const int NONE = 0;  //변경내용
 const int ROOT = 1;
 const int TREE_HEIGHT = 8;
 const int TREE_SIZE = 1 << TREE_HEIGHT;
