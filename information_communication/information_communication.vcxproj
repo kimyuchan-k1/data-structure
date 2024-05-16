@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="ArrayList.cpp" />
     <ClCompile Include="ArrayTree.cpp" />
+    <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="Deque.cpp" />
     <ClCompile Include="DoublyLinkedList.cpp" />
     <ClCompile Include="LinkedList.cpp" />
@@ -155,6 +156,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayTree.h" />
+    <ClInclude Include="BinarySearchTree.h" />
+    <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="Deque.h" />
     <ClInclude Include="doublyLinkedList.h" />
     <ClInclude Include="LinkedList.h" />
