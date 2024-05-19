@@ -171,6 +171,7 @@
     <ClInclude Include="Stackex1.h" />
     <ClInclude Include="StackResizable.h" />
     <ClInclude Include="StackTemplate.h" />
+    <ClInclude Include="Student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

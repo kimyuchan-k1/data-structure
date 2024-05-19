@@ -23,11 +23,19 @@ Data BinarySearchTree::Search(Node* n, int key)
 
 
 
+
 void BinarySearchTree::PrintData(Data d)
 {
 	if (Key(d) == SEARCH_FAILED) cout << "Search failed" << endl;
 	else cout << Key(d) << "is found" << endl;
 
+}
+
+void BinarySearchTree::PrintInorder(Node* n) {
+	if (n == NULL) return;
+	PrintInorder(n->left);
+	cout << n->data<<" ";
+	PrintInorder(n->right);
 }
 
 

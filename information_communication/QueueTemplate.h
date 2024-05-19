@@ -5,8 +5,11 @@
 using namespace std;
 
 const int QUEUE_SIZE = 100;
-void Error(string s) { cerr << s; exit(-1); }
+static void Error(string s) { cerr << s; exit(-1); }
 template <typename Data>
+
+
+
 
 class QueueTemplate {
 protected:

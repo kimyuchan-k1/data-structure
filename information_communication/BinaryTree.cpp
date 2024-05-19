@@ -1,6 +1,6 @@
 #include "BinaryTree.h"
 #include "QueueTemplate.h"
-void Error(string s) { cerr << s; exit(-1); }
+
 
 int FindPath(int pos) {
 	int path = 1;
