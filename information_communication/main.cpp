@@ -1,16 +1,33 @@
-#include "BinarySearchTree.h"
+#include "GraphLinkedList.h"
 
 
-int main(){
+int main() {
+	GraphLinkedList g;
 
-	BinarySearchTree b;
-	const int SIZE = 10;
-	int a[SIZE] = { 27,15,35,10,19,33,42,21,36,8 };
-	for (int i = 0; i < SIZE; i++) {
-		b.Insert(a[i]);
-	}
-	b.PrintInorder();
-	cout << endl;
+	g.InsertVertex(0, 'S');
+	g.InsertVertex(1, 'A');
+	g.InsertVertex(2, 'B');
+	g.InsertVertex(3, 'C');
+	g.InsertVertex(4, 'D');
+	g.InsertEdge(3,4);
+	g.InsertEdge(2, 4);
+	g.InsertEdge(1,4);
+	g.InsertEdge(0, 3);
+	g.InsertEdge(0, 2);
+	g.InsertEdge(0, 1);
+	g.PrintGraph();
+
+	cout << "Breadth First Search: ";
+	g.BFS(0);
 	return 0;
+
 	
+
+
+
 }
+
+
+
+
+

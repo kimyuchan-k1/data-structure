@@ -3,7 +3,7 @@
 #include <cstdlib>
 using namespace std;
 const int SIZE = 100;
-void Error(string s) { cerr << s; exit(-1); }
+static void Error(string s) { cerr << s; exit(-1); }
 
 template <typename Data>
 

@@ -133,6 +133,8 @@
     <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="Deque.cpp" />
     <ClCompile Include="DoublyLinkedList.cpp" />
+    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="GraphLinkedList.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Queue.cpp">
@@ -161,6 +163,8 @@
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="Deque.h" />
     <ClInclude Include="doublyLinkedList.h" />
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="GraphLinkedList.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="QueueTemplate.h" />
     <ClInclude Include="SortAlgorithm.h" />
